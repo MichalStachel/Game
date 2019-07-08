@@ -7,15 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
+    .app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       position: fixed;
+      transition: 0.050s;
     }
   </style>
 </head>
 
 <body>
-  click h for info
-  <img src="car.png" height="100px" alt="">
+  <div class='app'>
+    <button>Start Game</button>
+    <p></p>
+    <p id='teleportText'></p>
+    click h for info
+  </div>
+  <img src="car.png" height="60px" alt="">
   <script src="main.js" id='car'></script>
 </body>
 
